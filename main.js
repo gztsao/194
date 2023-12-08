@@ -462,7 +462,7 @@ let aryOld = [
       // ary = aryOld.filter(e => e.title.indexOf(filter) != -1 );
       // ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) != -1 ); //方法1
       // ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 ); //方法2
-      ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 ); //方法2
+      ary = aryOld.filter(e => e.toLowerCase().indexOf(filter) > -1 ); //方法2
 
       // console.log("我的搜尋關鍵字產生的新陣列.. " + ary );
       init();
