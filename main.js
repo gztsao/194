@@ -512,8 +512,8 @@ let aryOld = [
     document.getElementById('qrcode').innerHTML = ""; //先將qrcode清空下一行產生新qr
     let qrcode = new QRCode(document.getElementById("qrcode"), {
       text: url,//將網址放入選項
-      width: 200,
-      height: 200,
+      width: 128,
+      height: 128,
       colorDark : "#000000",
       colorLight : "#ffffff",
       correctLevel : QRCode.CorrectLevel.H
