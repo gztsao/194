@@ -465,6 +465,10 @@ let aryOld = [
       //語法成功可以搜尋抬頭與註解// ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 || e.notes.toLowerCase().indexOf(filter) > -1); //新方法兩個過濾
       ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 || e.notes.toLowerCase().indexOf(filter) > -1 || e.kind.toLowerCase().indexOf(filter) > -1); //新方法三個過濾
 
+      /*****測試要將按鈕恢復為全選（預設值）不然畫面怪怪的可能已經分類為金融*/
+      // console.log("目前搜尋下拉選擇鈕值為 " + document.getElementById('mySelect').value);
+      document.getElementById('mySelect').value = "全選" ;
+
       // console.log("我的搜尋關鍵字產生的新陣列.. " + ary );
       init();
     }
