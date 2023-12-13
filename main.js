@@ -509,15 +509,18 @@ let aryOld = [
 
     // 條件為id="qrcode"的位置更新網站網址並產生 QR code "變數rul"
     // let QRcode = "https://www.google.com"; //無效ans."eferenceError: Can't find variable: QRCode"
-    document.getElementById('qrcode').innerHTML = ""; //先將qrcode清空下一行產生新qr
-    let qrcode = new QRCode(document.getElementById("qrcode"), {
-      text: url,//將網址放入選項
-      width: 128,
-      height: 128,
-      colorDark : "#000000",
-      colorLight : "#ffffff",
-      correctLevel : QRCode.CorrectLevel.H
-    });
+    document.getElementById('qrcode').innerHTML = ""; //先將qrcode清空下一行產生新qrcode
+    new QRCode(document.getElementById('qrcode'), url ); //方法1
+    // let qrcode = new QRCode(document.getElementById("qrcode"), { //方法2
+    //   text: url,//將網址放入參數中
+    //   width: 128,
+    //   height: 128,
+    //   colorDark : "#000000",
+    //   colorLight : "#ffffff",
+    //   correctLevel : QRCode.CorrectLevel.Q //容错级别//由低到高 .L M Q H
+    // });
+
+    
 
   }
   
