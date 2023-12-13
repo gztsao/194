@@ -474,7 +474,7 @@ let aryOld = [
     }
 
   // 選擇的圖片的按鈕id btn_id[1,2,3...] 存入公用變數中將來可用
-  let pic = '';  // 大圖網址
+  let pic = '';  //網站logo圖片路經// 大圖網址
   
   // 定義各函式
   function change(idx) {
@@ -486,7 +486,7 @@ let aryOld = [
     let s_notes = ary[idx].notes; //註解說明
     
     //陣列內容ary[0,1,..到最後一筆資料]為陣列資料分別存入變數pic與變數url中給程式使用
-    pic = s_poster; //大圖網址
+    pic = s_poster; //網站logo圖片路經//大圖網址
     url = s_url; //網站網址
      console.log('陣列位置 ' + idx); //陣列位置
      console.log('大圖網址 ' + pic); //大圖網址
@@ -495,6 +495,8 @@ let aryOld = [
     render(); //進入產生大圖函數
   }
   
+
+  // 依按鈕圖示產生不同的變化預設為arry[0]
   function render() { //傳入變數'pic'與'url'產生1.大圖 與 2.點選後前往的網址
     // 條件為id="pic"的位置更新大圖ary[idx].poster(大圖網址)畫面
     document.getElementById('pic').src = pic;
@@ -504,6 +506,21 @@ let aryOld = [
 
     // 條件為id="url.old"的位置更新網站網址
     document.getElementById('url.old').href = url;
+
+    // 條件為id="qrcode"的位置更新網站網址並產生 QR code "變數rul"
+    // let QRcode = "https://www.google.com"; //無效ans."eferenceError: Can't find variable: QRCode"
+    let qrcode = new QRCode(document.getElementById("qrcode"), {
+      text: "https://www.google.com",
+      width: 128,
+      height: 128,
+      colorDark : "#000000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.H
+    });
+    qrcode.clear(); // clear the code.
+    qrcode.makeCode(url); // make another code.
+
+
   }
   
   function init() {
