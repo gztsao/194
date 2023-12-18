@@ -418,7 +418,7 @@ let aryOld = [
     {title:'GitHub ch15',
     kind:'偵錯',
     poster:'./img/github_desktop.svg',
-    url:'https://gztsao.github.io/194/',
+    url:'https://gztsao.github.io/ch15/',
     notes: '',   },
 
     
