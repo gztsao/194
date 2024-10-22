@@ -7,7 +7,7 @@ let aryOld = [
     
   {title:'ChatGPT',
     kind:'應用',
-    poster:'./img/chatgpt_logo.png',
+    poster:'./img/chatgpt_logo.svg',
     url:'https://chatgpt.com/',
     notes: 'none',  },
 
