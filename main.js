@@ -5,7 +5,13 @@ let ary=[];
 // 設定公用變數 (重要的資料)
 let aryOld = [
     
-    {title:'Google',
+  {title:'ChatGPT',
+    kind:'應用',
+    poster:'./img/chatgpt_logo.png',
+    url:'https://chatgpt.com/',
+    notes: 'none',  },
+
+  {title:'Google',
     kind:'應用',
     poster:'./img/google_logo.svg',
     url:'https://www.google.com',
