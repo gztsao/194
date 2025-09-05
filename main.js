@@ -281,13 +281,13 @@ let aryOld = [
     url:'https://caniuse.com/',
     notes: '查詢語法指令在不同瀏覽器是否可用',   },
 
-    {title:'Freepik',
+    {title:'Freepik免費圖庫',
     kind:'教學',
     poster:'./img/freepik_logo.svg',
     url:'https://www.freepik.com',
     notes: 'Freepik免費圖庫',   },
 
-    {title:'SOCO-ST',
+    {title:'SOCO-ST日本式免費圖庫',
     kind:'教學',
     poster:'./img/soco-st_logo.svg',
     url:'https://soco-st.com',
