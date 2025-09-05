@@ -9,7 +9,19 @@ let aryOld = [
     kind:'應用',
     poster:'./img/chatgpt_logo.svg',
     url:'https://chatgpt.com/',
-    notes: 'none',  },
+    notes: 'AI',  },
+
+  {title:'Gemini',
+    kind:'應用',
+    poster:'./img/gemini_logo.svg',
+    url:'https://gemini.google.com/',
+    notes: 'Google AI',  },
+
+  {title:'Copilot',
+    kind:'應用',
+    poster:'./img/copilot_logo.svg',
+    url:'https://copilot.microsoft.com/',
+    notes: 'MS AI',  },
 
   {title:'Google',
     kind:'應用',
@@ -179,6 +191,12 @@ let aryOld = [
     url:'https://www.ithome.com.tw/tags/%E8%B3%87%E5%AE%89%E6%9C%88%E5%A0%B1',
     notes: '資安月報',  },
 
+    {title:'MoonTv',
+      kind:'應用',
+      poster:'./img/moontv.jpg',
+      url:'https://tv.gztsao.dpdns.org/',
+      notes: 'MoonTv 線上串流平台',  },
+
     {title:'GitHub',
     kind:'教學',
     poster:'./img/github_logo.svg',
@@ -268,6 +286,12 @@ let aryOld = [
     poster:'./img/freepik_logo.svg',
     url:'https://www.freepik.com',
     notes: 'Freepik免費圖庫',   },
+
+    {title:'SOCO-ST',
+    kind:'教學',
+    poster:'./img/soco-st_logo.svg',
+    url:'https://soco-st.com',
+    notes: '日本免費SOCO-ST圖庫',   },
 
     {title:'picsum.photos假圖產生',
     kind:'教學',
